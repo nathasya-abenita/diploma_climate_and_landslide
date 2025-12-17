@@ -26,12 +26,22 @@
 \author{Nathasya Christien}
 \date{\textit{Based on Crozier (2010)}}
 
+% Optional: remove appendix slides from total frame count 
+\newcommand{\backupbegin}{ 
+    \newcounter{framenumberappendix} 
+    \setcounter{framenumberappendix}{\value{framenumber}} 
+} 
+\newcommand{\backupend}{ 
+    \addtocounter{framenumberappendix}{-\value{framenumber}} 
+    \addtocounter{framenumber}{\value{framenumberappendix}} 
+}
+
 \begin{document}
 
 \frame{\titlepage}
 
 % Traditional view slide
-\begin{frame}{Today's Relevancy: Recent news from Indonesia}
+\begin{frame}{Today's Relevance: Recent news from Indonesia}
 
 \begin{columns}[c]
     \column{.55\textwidth}
@@ -107,7 +117,7 @@
 
     \pause
 
-    \textbf{How heavy rainfall reduces shear strength:}
+    \textbf{How heavy rainfall strongly affect most factors:}
     \begin{itemize}
         \item Increases water weight
         \item Increases porewater pressure
@@ -229,7 +239,7 @@ Soil \emph{infiltration capacity} governs how much rainfall actually enters the 
 \end{frame}
 
 
-\begin{frame}{Climate-Landslide Model Results: Antecedent water status model}
+\begin{frame}{Climate-Landslide Model: Antecedent water status model}
     \begin{columns}[c]
     \column{.65\textwidth}
     \begin{figure}[H] % H
@@ -249,7 +259,7 @@ Soil \emph{infiltration capacity} governs how much rainfall actually enters the 
     \end{columns}
 \end{frame}
 
-\begin{frame}{Climate-Landslide Model Results: Antecedent water status model}
+\begin{frame}{Climate-Landslide Model: Antecedent water status model}
     \begin{columns}[c]
     \column{.65\textwidth}
     \begin{figure}[H] % H
@@ -269,52 +279,6 @@ Soil \emph{infiltration capacity} governs how much rainfall actually enters the 
     \end{columns}
 \end{frame}
 
-
-% \begin{frame}{Climate-Landslide Model: Regional empirical approach}
-%     \begin{columns}[c]
-%     \column{.6\textwidth}
-%     \begin{figure}[H] % H
-%     \centering
-%     \includegraphics[height=5.5cm]{fig/empirical_model.png}
-%     \captionsetup{justification=centering, margin=0.5cm}
-%     \captionsetup{justification=centering, margin=0.5cm, skip=2pt}
-%     \tiny
-%     \caption*{The frequency of landslide events ($y$) vs mean annual rainfall ($x$) around New Zealand (Hicks, 1995)}
-%     \end{figure}
-
-%     \column{.4\textwidth}
-%     \begin{itemize}
-%         \item Collected from 12 different catchments in New Zealand. \pause
-%         \item The standard error of the estimate $y$ is 1 year. \pause
-%         \item An 8\% rise in an area with annual rainfall of 1000 mm $\rightarrow$ number of events from 16 to 20 over a 100 year period.
-%     \end{itemize}
-%     \end{columns}
-% \end{frame}
-
-% \begin{frame}{Climate-Landslide Model: Regional empirical approach}
-%     \begin{columns}[c]
-%     \column{.6\textwidth}
-%     \begin{figure}[H] % H
-%     \centering
-%     \includegraphics[height=5.5cm]{fig/empirical_model.png}
-%     \captionsetup{justification=centering, margin=0.5cm}
-%     \captionsetup{justification=centering, margin=0.5cm, skip=2pt}
-%     \tiny
-%     \caption*{The frequency of landslide events ($y$) vs mean annual rainfall ($x$) around New Zealand (Hicks, 1995)}
-%     \end{figure}
-
-%     \column{.4\textwidth}
-%     \begin{itemize}
-%         \item Uncertainty factors:
-%         \begin{itemize}
-%             \item Predicted low and high estimates of mean precipitation is too large. \pause
-%             \item The standard error is still large. \pause
-%             \item Could not capture the full range of terrain, material, and vegetation throughout the country.
-%         \end{itemize}
-%     \end{itemize}
-%     \end{columns}
-% \end{frame}
-
 \begin{frame}{The Human Factor}
 \begin{columns}[c]
     \column{.5\textwidth}
@@ -330,7 +294,7 @@ Soil \emph{infiltration capacity} governs how much rainfall actually enters the 
     \column{.5\textwidth}
     \begin{itemize}
         \item From empirical studies, human actions can hide or even outweigh the effects of climate change. \pause
-        \item The impact of human activity can be seen with greater certainty and impact. \pause
+        \item The impact of human activity can be seen with greater certainty and magnitude. \pause
         \item Examples from New Zealand:
         \begin{itemize}
             \item Conversion from forest to pasture increases landslide probability by 3×. \pause
@@ -343,11 +307,82 @@ Soil \emph{infiltration capacity} governs how much rainfall actually enters the 
 
 \begin{frame}{Take-Home Messages}
     \begin{enumerate}
-        \item Climate change can increase landslides. \pause
+        \item Climate change can increase landslide activities. \pause
         \item However, prediction is extremely uncertain. \pause
         \item Human land-use changes often dominate. \pause
         \item We need collaboration between climate and landslide modellers.
     \end{enumerate}
 \end{frame}
+
+% Start appendix 
+\appendix 
+\backupbegin 
+
+\begin{frame}{Climate-Landslide Model: Frequency vs increased rainfall}
+    \begin{columns}[c]
+    \column{.6\textwidth}
+    \begin{figure}[H] % H
+    \centering
+    \includegraphics[height=5.5cm]{fig/empirical_model.png}
+    \captionsetup{justification=centering, margin=0.5cm}
+    \captionsetup{justification=centering, margin=0.5cm, skip=2pt}
+    \tiny
+    \caption*{The frequency of landslide events ($y$) vs mean annual rainfall ($x$) around New Zealand (Hicks, 1995)}
+    \end{figure}
+
+    \column{.4\textwidth}
+    \begin{itemize}
+        \item Collected from 12 different catchments in New Zealand.
+        \item The standard error of the estimate $y$ is 1 year.
+        \item An 8\% rise in an area with annual rainfall of 1000 mm $\rightarrow$ number of events from 16 to 20 over a 100 year period.
+    \end{itemize}
+    \end{columns}
+\end{frame}
+
+\begin{frame}{Climate-Landslide Model: Frequency vs increased rainfall}
+    \begin{columns}[c]
+    \column{.6\textwidth}
+    \begin{figure}[H] % H
+    \centering
+    \includegraphics[height=5.5cm]{fig/empirical_model.png}
+    \captionsetup{justification=centering, margin=0.5cm}
+    \captionsetup{justification=centering, margin=0.5cm, skip=2pt}
+    \tiny
+    \caption*{The frequency of landslide events ($y$) vs mean annual rainfall ($x$) around New Zealand (Hicks, 1995)}
+    \end{figure}
+
+    \column{.4\textwidth}
+    \begin{itemize}
+        \item Uncertainty factors:
+        \begin{itemize}
+            \item Predicted low and high estimates of mean precipitation is too large.
+            \item The standard error is still large. 
+            \item Could not capture the full range of terrain, material, and vegetation throughout the country.
+        \end{itemize}
+    \end{itemize}
+    \end{columns}
+\end{frame}
+
+\begin{frame}{Climate-Landslide Model: Event Magnitude vs Storm Rainfall}
+    \begin{columns}[c]
+    \column{.6\textwidth}
+    \begin{figure}[H] % H
+    \centering
+    \includegraphics[height=5.0cm]{fig/magnitude.png}
+    \captionsetup{justification=centering, margin=0.5cm}
+    \captionsetup{justification=centering, margin=0.5cm, skip=2pt}
+    \tiny
+    \caption*{Magnitude of landsliding and storm rainfall in Wairoa, NZ (Eyles and Eyles, 1982)}
+    \end{figure}
+
+    \column{.4\textwidth}
+    \begin{itemize}
+        \item Can only be used with confidence in the locality where they are derived
+        \item Still questionable still repeated landslide events may lead to 'event resistance' (increased threshold rainfall required)
+    \end{itemize}
+    \end{columns}
+\end{frame}
+
+\backupend
 
 \end{document}
