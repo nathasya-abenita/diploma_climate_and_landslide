@@ -48,7 +48,7 @@
     \column{.45\textwidth}
     \begin{itemize}
         \item Cyclone-induced floods and landslides impact North Sumatra. \pause
-        \item Public has pointed out how this disaster is also human-induced. \pause
+        \item Public has pointed out how this disaster is also human-induced.
     \end{itemize}
 \end{columns}
 \end{frame}
@@ -56,9 +56,9 @@
 \begin{frame}{Influential Papers on This Topic}
     \begin{figure}[H] % H
     \centering
-    \includegraphics[height=6.5cm]{fig/influential_papers.png}
+    \includegraphics[height=6.0cm]{fig/influential_papers.png}
     \captionsetup{justification=centering, margin=0.5cm}
-    \captionsetup{justification=centering, margin=0.5cm, skip=2pt}
+    \captionsetup{justification=centering, margin=0.5cm, skip=6pt}
     \tiny
     \caption*{Most cited papers as seen in Mendeley search engine}
     \end{figure}
@@ -132,24 +132,24 @@
 
 % Row 1
 \node (c1) {Increased precipitation total};
-\node (p1) [right=of c1] {Increased weight\\ Higher water table\\ for longer periods};
-\node (e1) [right=of p1] {Less rainfall needed\\ Increased shear stress\\ Reduced shear strength};
+\node (p1) [right=of c1] {Increased weight,\\ Higher water table\\ for longer periods};
+\node (e1) [right=of p1] {Less rainfall needed,\\ Increased shear stress,\\ Reduced shear strength};
 
 \draw[arrow] (c1) -- (p1);
 \draw[arrow] (p1) -- (e1);
 
 % Row 2
 \node (c2) [below=of c1] {Increased rainfall intensity};
-\node (p2) [right=of c2] {Increased infiltration\\ Throughflow\\ Surface runoff};
-\node (e2) [right=of p2] {Reduced shear strength\\ Increased surface erosion};
+\node (p2) [right=of c2] {Increased infiltration,\\ Throughflow,\\ Surface runoff};
+\node (e2) [right=of p2] {Reduced shear strength,\\ Increased surface erosion};
 
 \draw[arrow] (c2) -- (p2);
 \draw[arrow] (p2) -- (e2);
 
 % Row 3
 \node (c3) [below=of c2] {Increased air temperature};
-\node (p3) [right=of c3] {Higher evapotranspiration\\ Rapid snowmelt};
-\node (e3) [right=of p3] {More rainfall required\\ Reduced shear strength};
+\node (p3) [right=of c3] {Higher evapotranspiration,\\ Rapid snowmelt};
+\node (e3) [right=of p3] {More rainfall required,\\ Reduced shear strength};
 
 \draw[arrow] (c3) -- (p3);
 \draw[arrow] (p3) -- (e3);
@@ -171,15 +171,15 @@
 
 % Row 4
 \node (c4) {Increased wind speed\\ and duration};
-\node (p4) [right=of c4] {Enhanced root levering\\ Increased wave action\\ on shorelines};
-\node (e4) [right=of p4] {Reduction in soil moisture\\ Reduction of cohesion\\ Removal of lateral support};
+\node (p4) [right=of c4] {Enhanced root levering,\\ Increased wave action,\\ on shorelines};
+\node (e4) [right=of p4] {Reduction in soil moisture,\\ Reduction of cohesion,\\ Removal of lateral support};
 
 \draw[arrow] (c4) -- (p4);
 \draw[arrow] (p4) -- (e4);
 
 % Row 5
 \node (c5) [below=of c4] {Change in weather systems};
-\node (p5) [right=of c5] {Areas previously unaffected\\ subject to higher rainfall\\ (and vice versa)};
+\node (p5) [right=of c5] {Areas previously unaffected,\\ subject to higher rainfall,\\ (and vice versa)};
 \node (e5) [right=of p5] {Adjustment of slopes to\\ changed weather conditions};
 
 \draw[arrow] (c5) -- (p5);
@@ -188,7 +188,7 @@
 % Row 6
 \node (c6) [below=of c5] {Larger meteorological\\ variability};
 \node (p6) [right=of c6] {More or less frequent\\ wetting and drying cycles};
-\node (e6) [right=of p6] {Increased fissuring\\ Reduction of cohesion\\ and rock mass friction};
+\node (e6) [right=of p6] {Increased fissuring,\\ Reduction of cohesion\\ and rock mass friction};
 
 \draw[arrow] (c6) -- (p6);
 \draw[arrow] (p6) -- (e6);
@@ -196,38 +196,35 @@
 \end{tikzpicture}
 \end{frame}
 
-\begin{frame}{Local Slope Hydrology Dominates Climate Change Impact}
+\begin{frame}{Role of Local Slope Conditions}
 
 \textbf{Climate signals are strongly filtered by local slope conditions:}
 
 \begin{itemize}
-    \item Degree of existing inherent instability
-    \item Landslide type (shallow vs deep)
+    \item Degree of existing inherent instability \pause
+    \item Landslide type (shallow vs deep) \pause
     \item First-time failure vs reactivation
 \end{itemize} \pause
 
 \vspace{0.3cm}
 
-\textbf{Key physical constraint (often overlooked):}
+\textbf{Key hydrological factor:}:
 \begin{block}{}
 Failure requires water to \emph{accumulate} in the slope:
-\[
-\text{Infiltration rate} > \text{Drainage rate}
-\]
-\end{block} \pause
-
-\vspace{0.2cm}
-
-\textbf{Implication:}
-Soil \emph{infiltration capacity} governs how much rainfall actually enters the slope.
+\[ \text{Infiltration rate} > \text{Drainage rate} \] \pause
+\textbf{Implication} \\
+Soil \emph{infiltration capacity} governs how much rainfall actually enters the slope. \\
 \pause
-\vspace{0.3cm}
-
-\textbf{Observed example in Hong Kong (So, 1971):}
+\textbf{Example in Hong Kong (So, 1971)}:
 \begin{itemize}
-    \item $\sim$702 landslides triggered by $\sim$400 mm rainfall in one day
-    \item 35\% occurred in forested areas, despite covering only 8\% of the affected region
+    \item $\sim$702 landslides triggered by $\sim$400 mm rainfall in one day.
+    \item 35\% occurred in forested areas, despite covering only 8\% of the affected region.
 \end{itemize}
+\end{block} 
+
+% \vspace{0.2cm}
+
+
 
 \end{frame}
 
@@ -287,10 +284,8 @@ Soil \emph{infiltration capacity} governs how much rainfall actually enters the 
     \column{.4\textwidth}
     \begin{itemize}
         \item Collected from 12 different catchments in New Zealand. \pause
-        \item The equation for the trend is
-        \[y = 3009 x^{-8939}, s= 1.0\]
-        with $s$ as standard error of the estimate $y$. \pause
-        \item An 8\% rise in annual rainfall (from 1000 mm) $\rightarrow$ number of events from 16 to 20 over a 100 year period.
+        \item The standard error of the estimate $y$ is 1 year. \pause
+        \item An 8\% rise in an area with annual rainfall of 1000 mm $\rightarrow$ number of events from 16 to 20 over a 100 year period.
     \end{itemize}
     \end{columns}
 \end{frame}
@@ -333,35 +328,15 @@ Soil \emph{infiltration capacity} governs how much rainfall actually enters the 
 
     \column{.5\textwidth}
     \begin{itemize}
-        \item The impact of human activity on landsliding can be seen with greater certainty than that of future climate change. \pause
+        \item From empirical studies, human actions can hide or even outweigh the effects of climate change. \pause
+        \item The impact of human activity can be seen with greater certainty and impact. \pause
         \item Examples from New Zealand:
         \begin{itemize}
-            \item Forest converted to pasture increases landslide probability by 3×. \pause
-            \item Sedimentation rate increased by 5× after European farming practices commenced in New Zealand. \pause
-            \item Deforestation increases runoff 28\%, whereas climate-change-driven runoff increase is ~15\%. \pause
+            \item Conversion from forest to pasture increases landslide probability by 3×. \pause
+            \item Sedimentation rate increased by 5× after European farming practices started. \pause
+            \item Complete deforestation will increase runoff 28\%, whereas climate-driven runoff increase is 15\% by 2080.
         \end{itemize}
         \end{itemize}
-\end{columns}
-\end{frame}
-
-\begin{frame}{The Human Factor}
-\begin{columns}[c]
-    \column{.5\textwidth}
-    \begin{figure}[H] % H
-    \centering
-    \includegraphics[height=5.5cm]{fig/forest_vs_pasture.png}
-    \captionsetup{justification=centering, margin=0.5cm}
-    \captionsetup{justification=centering, margin=0.5cm, skip=2pt}
-    \tiny
-    \caption*{Contrast in landslide distribution between forested and pasture slopes in Manawatu, New Zealand (Feb 2004)}
-    \end{figure}
-
-    \column{.5\textwidth}
-    \textbf{About increase of hazard:}
-    \begin{itemize}
-        \item Comparing 2004 to 1900, the world's population has increased 4$\times$, while economic activity has increased by 40$\times$.
-        \item More people increases landslide losses, but human alteration of slopes increases landslide occurrence itself.
-    \end{itemize}
 \end{columns}
 \end{frame}
 
